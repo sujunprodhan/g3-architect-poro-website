@@ -24,6 +24,10 @@
   display: flex;
 }
 
+img {
+  width: 100%;
+}
+
 /* share style end */
 .header {
   background-color: rgba(255, 144, 14, 0.10);
@@ -81,24 +85,180 @@
 .paragraph_discription {
   max-width: 860px;
   margin: 0 auto;
-}
-
-.paragraph_discription {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.margin {
+  margin: 20px 0px;
 }
 
 /* banner style end */
 
 /* banner media quiry */
 
+
+/* team feature style start */
+/* main {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+} */
+
+.team {
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.team_container {
+  align-items: center;
+  gap: 70px;
+}
+
+.team_content h2 {
+  font-size: 45px;
+}
+
+.team_image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  color: rgb(255, 144, 14);
+}
+
+.of_our {
+  font-weight: bold;
+}
+
+.team_content {
+  width: 50%;
+}
+
+.team_image {
+  width: 50%;
+}
+
+/* team feature style end */
+/* love and enjoy style start */
+.love_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 100px;
+  gap: 150px;
+}
+
+.love_content,
+.love_image {
+  width: 50%;
+}
+
+.feature_title {
+  font-size: 45px;
+  width: 468px;
+  border-left: 3px solid rgb(255, 144, 14);
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.sub_cotnet {
+  padding: 30px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.feature_card {
+  margin-top: 24px;
+}
+
+.exprience_btn {
+  padding: 42px 46px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+.exprience_btn h3 {
+  font-size: 45px;
+}
+
+.exprience_btn p {
+  font-size: 24px;
+}
+
+/* love and enjoy style end */
+
+/* some fact style start */
+.some_facts {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.some_title {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.some_discription {
+  width: 542px;
+}
+
+.reword_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: max-content;
+  margin: 0 auto;
+  gap: 50px;
+  text-align: center;
+
+}
+
+.reword{
+  margin-top: 70px;
+}
+.reword_card div {
+  height: 240px;
+  width: 240px;
+  border: 2px solid rgb(255, 144, 14);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reword_card div h4 {
+  margin: 18px 0px;
+  font-size: 2.8rem;
+}
+
+.reword_card div img {
+  width: 50px;
+
+}
+
+/* some fact style end */
 @media screen and (max-width: 576px) {
+
+  header,
+  main,
+  footer {
+    padding: 20px;
+  }
+
   .header_banner {
     flex-direction: column;
   }
-.banner_title{
-  font-size: 3.25rem;
-}
+
+  .banner_title {
+    font-size: 3.25rem;
+  }
+
   .nav_item {
     flex-direction: column;
   }
@@ -109,5 +269,32 @@
 
   .paragraph_discription {
     padding: 10px;
+  }
+
+  .team_image {
+    grid-template-columns: 1fr;
+  }
+
+  .team_container {
+    flex-direction: column;
+  }
+
+  .team_image,
+  .team_content {
+    width: 100%;
+  }
+
+  .love_container {
+    flex-direction: column;
+  }
+
+  .love_content,
+  .love_image {
+    width: 100%;
+  }
+
+  .exprience_btn {
+    margin-top: -100px;
+    margin-left: 2px;
   }
 }
