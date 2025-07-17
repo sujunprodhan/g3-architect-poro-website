@@ -215,12 +215,10 @@ img {
   margin: 0 auto;
   gap: 50px;
   text-align: center;
-
+  margin-top: 100px;
 }
 
-.reword{
-  margin-top: 70px;
-}
+
 .reword_card div {
   height: 240px;
   width: 240px;
@@ -233,7 +231,7 @@ img {
 }
 
 .reword_card div h4 {
-  margin: 18px 0px;
+  margin: 20px 0px;
   font-size: 2.8rem;
 }
 
@@ -293,8 +291,20 @@ img {
     width: 100%;
   }
 
+  .some_discription {
+    width: 400px;
+  }
+
   .exprience_btn {
     margin-top: -100px;
     margin-left: 2px;
+  }
+
+  .reword_card {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .display{
+    display: none;
   }
 }
