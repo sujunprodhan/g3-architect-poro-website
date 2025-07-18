@@ -110,7 +110,7 @@ img {
   max-width: 1140px;
   margin: 0 auto;
   align-items: center;
-  border: 2px solid red;
+  margin-top: 130px;
 }
 
 .team_container {
@@ -241,6 +241,60 @@ img {
 }
 
 /* some fact style end */
+
+/* our sponspors section style*/
+.our_sponspors {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.spnspors_container {
+  width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title_contaner h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.sponsers_logo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.sponsers_logo img {
+  width: 50%;
+  filter: grayscale(100%);
+}
+
+.paragraph_discription {
+  max-width: 600px;
+}
+
+/* our sponspors section end*/
+
+/* footer style start */
+.copyright {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 50px;
+  background: rgb(255, 244, 231);
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* footer style end */
+
+
 @media screen and (max-width: 576px) {
 
   header,
@@ -304,7 +358,27 @@ img {
     grid-template-columns: 1fr;
     margin-top: 50px;
   }
-  .display{
-    display: none;
+
+  .reword_card div {
+    height: 340px;
+    width: 340px;
+    font-size: 30px;
+  }
+
+  .sponsers_logo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .spnspors_container h1 {
+    font-size: 2.8rem;
+  }
+
+  .sponsers_logo img {
+    width: 30%;
+  }
+
+  .copyright {
+    margin: 0 auto;
   }
 }
